@@ -57,11 +57,11 @@ const getPdfSrc = (title) => {
     // Replace with your logic to map titles to PDF sources
     switch (title) {
         case 'SGS':
-            return '../assets/Placeholder.pdf'
+            return './Placeholder.pdf'
         case 'Employee Handbook':
-            return '../assets/Placeholder.pdf'
+            return './Placeholder.pdf'
         case 'Employee Onboarding':
-            return '../assets/Onboarding.pdf'
+            return './Onboarding.pdf'
         default:
             return
     }
