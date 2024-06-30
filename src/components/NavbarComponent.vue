@@ -8,7 +8,7 @@
                         alt="My Happy SVG"
                         class="logo-svg"
                     />
-                    <p>Welcome to TDCX!</p>
+                    <h3>Welcome to TDCX!</h3>
                 </div>
             </template>
             <!-- <template #end>

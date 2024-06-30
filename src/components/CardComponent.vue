@@ -1,12 +1,14 @@
 <template>
     <Card class="card">
-        <template #title>
-            <i :class="'pi' + ' ' + iconName"></i>
-            {{ title }}
+        <template #title class="title">
+            <div class="title-content">
+                <i :class="'pi' + ' ' + iconName" class="icon"></i>
+                <h3>{{ title }}</h3>
+            </div>
         </template>
         <template #content>
             <p class="m-0">
-                {{ description }}
+                <h3>{{ description }}</h3>
             </p>
         </template>
         <template #footer>
@@ -49,6 +51,17 @@ defineEmits(['view'])
     border-style: solid;
     font-family: 'Courier New', Courier, monospace;
 }
+
+.title-content {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+}
+
+.title-content .icon {
+    font-size: 24px; /* Adjust icon size as needed */
+    margin-right: 10px; /* Add spacing between icon and title */
+}
+
 .p-button {
     margin-right: 10px;
 }
