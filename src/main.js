@@ -16,6 +16,7 @@ import Splitter from 'primevue/splitter'
 import SplitterPanel from 'primevue/splitterpanel'
 import ToggleSwitch from 'primevue/toggleswitch'
 import Dialog from 'primevue/dialog'
+import Divider from 'primevue/divider'
 
 const app = createApp(App)
 
@@ -54,5 +55,6 @@ app.component('Carousel', Carousel)
 app.component('Slider', Slider)
 app.component('ToggleSwitch', ToggleSwitch)
 app.component('Dialog', Dialog)
+app.component('Divider', Divider)
 
 app.mount('#app')

@@ -59,6 +59,8 @@ const carouselItems = ref([
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 .carousel-wrapper {
     padding: 30px;
     display: flex;
@@ -72,7 +74,7 @@ const carouselItems = ref([
     text-align: center; /* Center the text horizontally */
     margin-bottom: 20px; /* Add space between title and carousel */
     margin: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto';
 }
 
 .carousel-item {

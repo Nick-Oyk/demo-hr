@@ -7,15 +7,13 @@
             </div>
         </template>
         <template #content>
-            <p class="m-0">
-                <h3>{{ description }}</h3>
-            </p>
+            <p class="m-0">{{ description }}</p>
         </template>
         <template #footer>
             <div class="flex gap-4 mt-1">
                 <Button
                     label="View"
-                    class="w-full"
+                    class="custom-button"
                     icon="pi pi-eye"
                     @click="$emit('view', { title })"
                 />
@@ -42,14 +40,15 @@ defineEmits(['view'])
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 .p-card {
     width: 25rem;
     overflow: hidden;
     padding: 40px;
     margin: 20px;
-    border: 1px;
-    border-style: solid;
-    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid black; /* Example border style */
+    font-family: 'Roboto';
 }
 
 .title-content {
@@ -62,7 +61,8 @@ defineEmits(['view'])
     margin-right: 10px; /* Add spacing between icon and title */
 }
 
-.p-button {
-    margin-right: 10px;
+.custom-button {
+    width: 100%; /* Ensure button takes full width of its container */
+    /* Add any other styles as needed */
 }
 </style>

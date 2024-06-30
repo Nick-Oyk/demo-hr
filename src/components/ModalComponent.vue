@@ -69,6 +69,8 @@ const getPdfSrc = (title) => {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 .pdf-container {
     width: 100%;
     max-width: 100%;
@@ -83,6 +85,6 @@ const getPdfSrc = (title) => {
 
 .p-button {
     margin: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto';
 }
 </style>

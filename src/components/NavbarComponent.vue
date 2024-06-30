@@ -27,6 +27,8 @@
 <script setup></script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 .logo-svg {
     width: 40px; /* Adjust width as needed */
     height: auto; /* Maintain aspect ratio */
@@ -46,7 +48,7 @@
 .start-content {
     display: flex;
     align-items: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto';
 }
 
 /* .end-content {
